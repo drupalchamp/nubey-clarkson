@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+		{% if (paragraph.field_left_content_box.value == true)  or (paragraph.field_right_content_box.value == true) %}
+			<div id="whole-column-two-section" class="container-fluid">
+				<div class="container">
+					<div class="row">
+						{% if paragraph.field_left_content_box.value == true %}
+							<div class="left-content-section col-sm-6">{{ content.field_left_content_box }}</div>
+						{% endif %}
+
+						{% if paragraph.field_right_content_box.value == true %}
+							<div class="right-content-section col-sm-6">{{ content.field_right_content_box }}</div>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	</div>
+{% endblock paragraph %}

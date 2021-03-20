@@ -1,0 +1,64 @@
+header{
+    padding: 32px 0px;
+    overflow: hidden;
+}
+#whole-banner-section{
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+div#whole-column-two-section {
+    background-color: #e0e0db;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#image-heading-text-button.container {
+    padding: 90px 0px;
+    overflow: hidden;
+}
+div#whole-image-title-cta-section {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+div#content-bottom-area {
+    padding: 40px 0px 70px 0px;
+    overflow: hidden;
+}
+#maindiv {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+#midcontent-area {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+#sidebar-first-area {
+    width: 30%;
+    float: left;
+}
+#sidebar-second-area {
+    width: 30%;
+    float: right;
+}
+body.sidebar-first #midcontent-area {
+    width: 68%;
+    float: right;
+}
+body.sidebar-second #midcontent-area {
+    width: 68%;
+    float: left;
+}
+body.Two-sidebars #midcontent-area {
+    width: 38%;
+    float: left;
+}
+footer {
+    background-color: #2a2829;
+    padding: 25px 0px 65px 0px;
+    color: #ffffff;
+    overflow: hidden;
+}

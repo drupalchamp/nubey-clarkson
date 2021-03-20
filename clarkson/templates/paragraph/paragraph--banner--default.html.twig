@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+  ]
+%}
+
+{% set backgroundimageUrl = file_url(paragraph.field_upload_image.entity.fileuri) %}
+
+{% block paragraph %}
+  	<div{{ attributes.addClass(classes) }}>
+		{% if (paragraph.field_upload_image.value == true)  or (paragraph.field_heading.value == true) or (paragraph.field_cta_button.value == true) %}
+			<div id="whole-banner-section" class="container-fluid">
+				<section class="section section--banner"  style="background: url({{ backgroundimageUrl }}) no-repeat 60% 85%;background-size: cover;min-height: 90vh;">
+				<div class="banner-content container">	        
+					{% if paragraph.field_heading.value == true %}
+					{% set lineHeight =  paragraph.field_heading_font_size.value + 8 %}
+						<div class="heading" style="font-size:{{ paragraph.field_heading_font_size.value }}px; line-height:{{ lineHeight }}px;">{{ content.field_heading }}</div>
+					{% endif %}	   
+
+					{% if paragraph.field_cta_button.value == true %}
+						<div class="cta-button">{{ content.field_cta_button }}</div>
+					{% endif %}
+				</div>
+				</section>
+			</div>
+		{% endif %}
+	</div>
+{% endblock paragraph %}

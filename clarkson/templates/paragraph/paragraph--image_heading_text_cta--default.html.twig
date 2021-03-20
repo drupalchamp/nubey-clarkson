@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    'paragraph-id--' ~ paragraph.id(),
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+	paragraph.field_image_alignment.value
+  ]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+	<div id="image-heading-text-button" class="container">
+			{% if paragraph.field_image_alignment.value == 'right' %}			
+					<div class="content-section col-sm-6" data-aos="fade-right" data-aos-offset="300">
+						{% if paragraph.field_heading.value == true %}
+							<div class="heading-section ">{{ content.field_heading }}</div>
+						{% endif %}
+						{% if paragraph.field_description.value == true %}
+							<div class="description-section">{{ content.field_description }}</div>
+						{% endif %}
+						{% if paragraph.field_cta_button.value == true %}
+							<div class="button-section cta-button">{{ content.field_cta_button }}</div>
+						{% endif %}
+					</div>
+					{% if paragraph.field_upload_image.value == true %}
+						<div class="image-section col-sm-6" data-aos="fade-left" data-aos-offset="300">{{ content.field_upload_image }}</div>
+					{% endif %}
+			{% else %}
+					{% if paragraph.field_upload_image.value == true %}
+						<div class="image-section col-sm-6" data-aos="fade-right" data-aos-offset="300">{{ content.field_upload_image }}</div>
+					{% endif %}
+					<div class="content-section col-sm-6" data-aos="fade-left" data-aos-offset="300">
+						{% if paragraph.field_heading.value == true %}
+							<div class="heading-section">{{ content.field_heading }}</div>
+						{% endif %}
+						{% if paragraph.field_description.value == true %}
+							<div class="description-section">{{ content.field_description }}</div>
+						{% endif %}
+						{% if paragraph.field_cta_button.value == true %}
+							<div class="button-section cta-button">{{ content.field_cta_button }}</div>
+						{% endif %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+{% endblock paragraph %}

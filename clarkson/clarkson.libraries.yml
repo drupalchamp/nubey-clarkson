@@ -1,0 +1,11 @@
+global-styling:
+  css:
+    theme:
+      css/layout.css: {} 
+      css/theme.css: {}
+      css/mobile.css: {}
+      css/ipad.css: {}
+      css/aos.css: {}
+  js:
+    js/aos.js: {}
+    js/simple.js: {}

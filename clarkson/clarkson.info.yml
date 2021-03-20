@@ -1,0 +1,22 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+core_version_requirement: ^8 || ^9
+
+name: 'clarkson'
+description: 'Custom Theme.'
+package: 'Bootstrap'
+
+regions:
+  header_left: 'Header Left Section'
+  header_right: 'Header Right Section'
+  mobile_logo: 'Mobile Logo'
+  mobile_menu_area: 'Mobile Menu Section'
+  content: 'Content Area'
+  content_bottom_left: 'Content Bottom Left Section'
+  content_bottom_right: 'Content Bottom Right Section'
+  footer_left: 'Footer Left Section'
+  footer_right: 'Footer Right Section'
+
+libraries:
+  - 'clarkson/global-styling'

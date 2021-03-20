@@ -1,0 +1,615 @@
+/**
+ ** Global use
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+	margin: 0px;
+	padding: 0px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #000000;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 45px;
+    line-height: 51px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+}
+h1.page-header{
+    border-bottom: 0px;
+}
+a {
+    outline: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+ul li {
+    list-style: none;
+}
+.container{
+    width: 1230px !important;
+}
+/*header section css*/
+.header-right .block {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-right .region.region-header-right {
+    text-align: right;
+}
+.block-superfish {
+    width: auto;
+}
+.header-left.col-sm-3 a {
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.block-superfish ul.sf-menu.menu li a {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 1em .5em;
+    padding: 0px;
+}
+.block-superfish ul.sf-menu.menu li a.is-active {
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+}
+.social-icons.block span {
+    display: none;
+}
+.social-icons.block .fa-twitter{
+    padding-left: 1em;
+}
+.social-icons.block .fa-linkedin-in {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.social-icons.block .fa-facebook-f {
+    padding-right: 1.5em;
+}
+#block-socialmediaicon .social-icons a{
+    color: #ffffff;
+}
+#block-socialmediaicon .action-button.block a {
+    padding: .85em 1.75em;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+#block-socialmediaicon .action-button.block a:hover{
+    opacity: .8;
+}
+body:not(.fixed-banner) .header-left.col-sm-3 a, body:not(.fixed-banner) .block-superfish ul.sf-menu a {
+    color: #000000;
+}
+body:not(.fixed-banner) #block-socialmediaicon .action-button.block a{
+    background-color: #253551;
+    color: #ffffff;
+}
+body:not(.fixed-banner) .social-icons.block a {
+    color: #000000 !important;
+}
+.header-left a.name.navbar-brand {
+    padding-left: 0px;
+}
+body:not(.fixed-banner) #maindiv{
+    margin-top: 50px;
+}
+/*banner section css*/
+body.fixed-banner header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+body.fixed-banner #maindiv{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#whole-banner-section .banner-content.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    z-index: 111;
+}
+#whole-banner-section .background-bg img,
+body.fixed-banner #block-takeaction .field--name-field-upload-image img {
+    width: 100%;
+}
+section.section.section--banner::after,
+section.block-banner-type-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+#whole-banner-section .banner-content.container .heading {
+    max-width: 600px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.cta-button a {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1.25em 2.1em;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+}
+.cta-button a:hover {
+    opacity: .8;
+}
+/*column two section css*/
+.left-content-section.col-sm-6 h2 {
+    margin-top: 0px;
+}
+.right-content-section.col-sm-6{
+    padding-left: 100px;
+}
+.right-content-section.col-sm-6 p {
+    font-size: 23px;
+    line-height: 40px;
+}
+/*image heading text button section css*/
+div#image-heading-text-button.container {
+    display: flex;
+    align-items: center;
+}
+#image-heading-text-button .heading-section {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+#image-heading-text-button .content-section.col-sm-6 .cta-button a {
+    background-color: #253551;
+    color: #ffffff;
+}
+.paragraph--type--image-heading-text-cta.right #image-heading-text-button{
+    padding-bottom: 0px;
+}
+.paragraph--type--image-heading-text-cta.right #image-heading-text-button .content-section{
+    padding-right: 6rem;
+}
+.paragraph--type--image-heading-text-cta.left #image-heading-text-button .content-section{
+    padding-left: 6rem;
+}
+.paragraph--type--image-heading-text-cta.right #image-heading-text-button .image-section{
+    padding-left: 6rem;
+}
+.paragraph--type--image-heading-text-cta.left #image-heading-text-button .image-section{
+    padding-right: 6rem;
+}
+/*background image text cta section css*/
+div#whole-image-title-cta-section .background-image img {
+    max-height: 475px;
+}
+div#whole-image-title-cta-section .content-section.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+    max-width: 880px;
+}
+div#whole-image-title-cta-section .content-section.container h2{
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+div#whole-image-title-cta-section .content-section.container .heading p {
+    font-size: 20px;
+}
+/*content bottom left right section css*/
+.content-bottom-left.col-sm-6 {
+    padding-right: 14rem;
+}
+.content-bottom-left.col-sm-6 h2 {
+    margin-top: 0px;
+}
+.content-bottom-right.col-sm-6 {
+    padding: 0px 4rem 0 11rem;
+}
+.simplenews-subscriber-form h2.block-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.simplenews-subscriber-form label {
+    display: none;
+}
+.simplenews-subscriber-form .field--name-mail {
+    max-width: 285px;
+    margin-right: 10px;
+    float: left;
+}
+.simplenews-subscriber-form .form-control {
+    height: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0px;
+}
+.simplenews-subscriber-form .form-control::placeholder{
+    font-size: 16px;
+    color: #cccccc;
+}
+.simplenews-subscriber-form .form-actions {
+    float: left;
+}
+.simplenews-subscriber-form .form-actions .form-submit{
+    min-width: 125px;
+    height: 65px;
+    border-radius: 0px;
+    margin-right: 0px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #253551;
+}
+/*about page*/
+body.page-node-6 #whole-banner-section .banner-content.container .heading {
+    max-width: 925px;
+}
+section#block-views-block-stand-out-block-1 {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 125px;
+}
+section#block-views-block-stand-out-block-1 h2.block-title {
+    font-size: 45px;
+    line-height: 51px;
+    margin-bottom: 50px;
+}
+.view-stand-out .views-row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.view-stand-out .views-col {
+    width: 31% !important;
+}
+.view-stand-out .views-col.col-2{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+.view-stand-out .views-field.views-field-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+/* initiatives page css*/
+.view-initiatives {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+}
+.path-initiatives h1.page-header {
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.view-initiatives .views-row:first-child{
+    margin-bottom: 60px;
+}
+.view-initiatives .views-col {
+    padding: 25px;
+    text-align: center;
+}
+.view-initiatives .current-Initiatives-content-box .Initiatives-date {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.view-initiatives .current-Initiatives-content-box .Initiatives-title a {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 25px;
+    display: block;
+    text-decoration: none;
+}
+.view-initiatives .current-Initiatives-content-box .Initiatives-link-text a {
+    color: #253551;
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top: 15px;
+    display: block;
+}
+.view-initiatives .view-footer{
+    text-align: center;
+}
+.view-initiatives .view-footer a {
+    display: inline-block;
+    margin-top: 75px;
+    color: #253551;
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid #253551;
+}
+/*contact us page css*/
+.page-node-7 div#maindiv {
+    max-width: 1200px;
+    width: 100%;
+}
+section#block-contactus {
+    width: 40%;
+    float: left;
+}
+section#block-webform {
+    width: 48%;
+    padding-top: 25px;
+    float: right;
+}
+#block-contactus p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#block-contactus .social-icons.block .fa-twitter {
+    padding-left: 0;
+}
+.webform-submission-contact-us-form .form-group {
+    margin-bottom: 25px;
+}
+.webform-submission-contact-us-form label,
+.webform-submission-volunteer-opportunities-form label{
+    font-weight: normal;
+    font-size: 14px;
+}
+.webform-submission-contact-us-form .form-item-name2 label,
+.webform-submission-volunteer-opportunities-form .form-item-name2 label,
+.webform-submission-volunteer-opportunities-form .form-item-phone2 label,
+.webform-submission-volunteer-opportunities-form .form-item-phone3 label{
+    opacity: 0;
+}
+.webform-submission-contact-us-form .js-form-item-name1::after,
+.webform-submission-volunteer-opportunities-form .js-form-item-name1::after{
+    content:'First Name';
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.webform-submission-contact-us-form .js-form-item-name2::after,
+.webform-submission-volunteer-opportunities-form .js-form-item-name2::after{
+    content:'Last name';
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.webform-submission-contact-us-form .js-form-item-name1,
+.webform-submission-contact-us-form .js-form-item-name2,
+.webform-submission-volunteer-opportunities-form .js-form-item-name1,
+.webform-submission-volunteer-opportunities-form .js-form-item-name2{
+    width: 49%;
+    float: left;
+}
+.webform-submission-contact-us-form .js-form-item-name2,
+.webform-submission-volunteer-opportunities-form .js-form-item-name2{
+    margin-left: 2%;
+}
+.webform-submission-contact-us-form .form-control,
+.webform-submission-volunteer-opportunities-form .form-control {
+    height: 43px;
+    border-radius: 0px;
+    background: #fafafa;
+    box-shadow: none;
+}
+.simplenews-subscriber-form .form-control:focus,
+.webform-submission-contact-us-form .form-control:focus,
+.webform-submission-volunteer-opportunities-form .form-control:focus{
+    border-color: #cccccc;
+    box-shadow: none;
+}
+.webform-submission-contact-us-form .form-textarea.form-control,
+.webform-submission-volunteer-opportunities-form .form-textarea.form-control{
+    height: 100px;
+}
+.webform-submission-contact-us-form button#edit-actions-submit {
+    background-color: #253551;
+    border-color: #253551;
+    border-radius: 0px;
+    padding: 20px 30px;
+    font-size: 16px;
+}
+/*take action page css*/
+.block-bgimage-heading-description-cta-section .block-banner-type-content {
+    position: relative;
+    z-index: 1;    
+}
+#content-left-right-section .content-section .heading-text h1,
+#content-left-right-section .content-section {
+    color: #ffffff;
+}
+.paragraph--type--heading-text-cta.left div#content-left-right-section{
+    padding-right: 13rem;
+    padding-left: 0px;
+}
+.paragraph--type--heading-text-cta.right div#content-left-right-section{
+    padding-left: 12rem;
+    padding-right: 0px;
+}
+#content-left-right-section .content-section .description{
+    margin-top: 37px;
+}
+/*take-action modal css*/
+.ui-dialog .ui-dialog-titlebar {
+    background: none;
+    border: 0px;
+}
+.ui-dialog .ui-dialog-title {
+    display: none;
+}
+.ui-dialog .ui-dialog-content {
+    position: initial;
+    padding: .75em 2em 0em 2em;
+    overflow-y: hidden;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    border-width: 0px;
+    margin-top: 0em;
+    padding: 0em 2em;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    right: 2em;
+    top: 40px;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 0 0 1em 0;
+    border-radius: 0px;
+    padding: .7em 2.5em;
+    font-size: 14px;
+    background-color: #272727;
+    border-color: #272727;
+}
+.webform-confirmation-modal--content strong {
+    font-size: 20px;
+    font-weight: 300;
+}
+.webform-submission-volunteer-opportunities-form .form-type-webform-markup {
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+.webform-submission-volunteer-opportunities-form .js-form-item-phone1::after{
+    content:'(###)';
+    font-size: 14px;
+}
+.webform-submission-volunteer-opportunities-form .js-form-item-phone2::after{
+    content:'###';
+    font-size: 14px;
+}
+.webform-submission-volunteer-opportunities-form .js-form-item-phone3::after{
+    content:'####';
+    font-size: 14px;
+}
+.webform-submission-volunteer-opportunities-form .js-form-item-phone1,
+.webform-submission-volunteer-opportunities-form .js-form-item-phone2,
+.webform-submission-volunteer-opportunities-form .js-form-item-phone3{
+    width: 65px;
+    float: left;
+}
+.webform-submission-volunteer-opportunities-form .js-form-item-phone2 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.webform-submission-volunteer-opportunities-form .js-form-type-textarea{
+    width: 100%;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: left;
+}
+/*initiative page css*/
+.initiatives-detail-page {
+    max-width: 655px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.initiatives-detail-page h1 {
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+div#nextprev-navigation {
+    width: 100%;
+    overflow: hidden;
+}
+div#nextprev-navigation .first,
+div#nextprev-navigation .last{
+    width: 50%;
+    float: left;
+}
+div#nextprev-navigation .last{
+    float: right !important;
+    text-align: right;
+}
+div#nextprev-navigation .first a,
+div#nextprev-navigation .last a {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+}
+div#nextprev-navigation .first a{
+    background: url(../images/prev.png) no-repeat left;
+    padding-left: 35px;
+}
+div#nextprev-navigation .last a{
+    background: url(../images/next.png) no-repeat right;
+    padding-right: 35px;
+}
+/*footer section css*/
+footer .footer-left h2{
+    text-transform: uppercase;
+}
+footer h2 {
+    font-size: 20px !important;
+    color: #ffffff;
+}
+footer a, footer a:hover, ul.menu.menu--our-work.nav li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*burger menu*/
+ul.menu.menu--our-work.nav li a {
+    padding: 0px;
+}
+nav#block-ourwork {
+    width: 50%;
+    float: left;
+}
+.mobile-header {
+    display: none;
+}
+.burger-menu-open {
+    display: none;
+}
+.path-user div#maindiv {
+    max-width: 1200px;
+}

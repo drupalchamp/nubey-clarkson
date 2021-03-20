@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * footer area template
+ */
+#}
+
+<footer>
+  <div id="whole-footer-area" class="container-fluid">
+    <div class="footer-area container">
+      <div class="row">
+        {% if page.footer_left %}
+          <div class="footer-left col-sm-8">{{ page.footer_left }}</div>
+        {% endif %}
+        {% if page.footer_right %}        
+          <div class="footer-right col-sm-4">{{ page.footer_right }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</footer>

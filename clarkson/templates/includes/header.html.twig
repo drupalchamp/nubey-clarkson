@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * header area template
+ */
+#}
+
+<div class="mobile-header container">
+  <div class="row">
+    <div class="header-top-logo col-sm-3">{{ page.mobile_logo }}</div>
+    {% if page.mobile_menu_area %} 
+    <div class="burger-menu-close col-sm-9"><span class="close"><span class="cross-left"></span><span class="cross-right"></span></span></div>        
+    {% endif %}
+  </div>
+  <div id="mobile-menu-section">{{ page.mobile_menu_area }}</div>
+</div>
+
+<header>
+  <div id="whole-header-area" class="container-fluid">
+    <div class="header-area container">
+      <div class="row">
+        {% if page.header_left %}
+          <div class="header-left col-sm-3">{{ page.header_left }}</div>
+        {% endif %}
+        {% if page.header_right %}
+          <div class="header-right col-sm-9">{{ page.header_right }}<span class="burger-menu-open"><span class="icon-bar"></span><span class="icon-bar"></span></span></div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>

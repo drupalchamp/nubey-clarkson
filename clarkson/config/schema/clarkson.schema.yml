@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the clarkson theme.
+
+clarkson.settings:
+  type: theme_settings
+  label: 'clarkson settings'
